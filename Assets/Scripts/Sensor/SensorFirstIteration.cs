@@ -38,6 +38,7 @@ public class SensorFirstIteration : MonoBehaviour
             CC.right = true;
         }
         CC.index++;
+        Debug.Log("turndec");
         CC.fourWayStopCheck = true;
     }
 
@@ -116,21 +117,18 @@ public class SensorFirstIteration : MonoBehaviour
 
             if (rend.material.color == green && CC.decision[CC.index] == 0 && CC.safeLeft==0 && CC.safeIntersection==0)
             {
-                Debug.Log("Hello");
                 CC.left = true;
                 CC.index++;
                 CC.intersection = false;
             }
             else if (rend.material.color == green && CC.decision[CC.index] == 1 && CC.safeIntersection == 0)
             {
-                Debug.Log("Hello");
                 CC.forward = true;
                 CC.index++;
                 CC.intersection = false;
             }
             else if (rend.material.color == green && CC.decision[CC.index] == 2 && CC.safeIntersection == 0)
             {
-                Debug.Log("Hello");
                 CC.right = true;
                 CC.index++;
                 CC.intersection = false;

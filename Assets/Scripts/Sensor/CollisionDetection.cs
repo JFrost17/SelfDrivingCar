@@ -16,7 +16,7 @@ public class CollisionDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (this.gameObject.tag == "Collision" && other.gameObject.layer == 8 && CC.forward == true && CC.left == false && CC.right == false)
+        if (this.gameObject.tag == "Collision" && other.gameObject.layer == 8 && CC.forward == true && CC.left == false && CC.right == false && CC.intersection == false)
         {
             CC.forward = false;
         }

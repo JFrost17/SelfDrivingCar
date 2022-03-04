@@ -2045,8 +2045,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.84653, y: 1.8731823, z: 3.762276}
-  m_Center: {x: -4.3728433, y: -0.43659115, z: 0.097590566}
+  m_Size: {x: 4.84653, y: 1.8731823, z: 3.3270257}
+  m_Center: {x: -4.3728433, y: -0.43659115, z: 0.3152157}
 --- !u!23 &138437282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9023,7 +9023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &932791093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16447,8 +16447,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4232156
-  m_Center: {x: -0.06662941, y: 0, z: 0}
+  m_Radius: 0.9898758
+  m_Center: {x: 0.042692184, y: 0, z: 0.040496826}
 --- !u!23 &1760776714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18299,8 +18299,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.980123, y: 1.8731823, z: 2.8784773}
-  m_Center: {x: -2.2026384, y: -0.43659115, z: 1.1218511}
+  m_Size: {x: 4.980123, y: 1.8731823, z: 3.031949}
+  m_Center: {x: -2.2026384, y: -0.43659115, z: 1.198587}
 --- !u!23 &1960271477
 MeshRenderer:
   m_ObjectHideFlags: 0

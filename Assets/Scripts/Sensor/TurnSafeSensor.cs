@@ -32,6 +32,7 @@ public class TurnSafeSensor : MonoBehaviour
             CC.right = true;
         }
         CC.index++;
+        Debug.Log("turndec");
         CC.fourWayStopCheck = true;
     }
 
@@ -60,7 +61,6 @@ public class TurnSafeSensor : MonoBehaviour
     {
         if (/*CC.decision[CC.index] == 0 &&*/ other.gameObject.layer == 8 && this.gameObject.tag == "SafeForward")
         {
-            Debug.Log("uuuuuuuuuuuuuh");
             CC.safeLeft--;
             if(CC.safeLeft == 0)
             {

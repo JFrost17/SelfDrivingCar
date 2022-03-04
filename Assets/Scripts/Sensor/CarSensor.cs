@@ -32,6 +32,7 @@ public class CarSensor : MonoBehaviour
             CC.right = true;
         }
         CC.index++;
+        Debug.Log("turndec");
         CC.fourWayStopCheck = true;
     }
 
@@ -58,9 +59,8 @@ public class CarSensor : MonoBehaviour
                 CC.carInIntersection +=1;
             }
         }
-        if (this.gameObject.tag == "CarSensorIntersection" && other.gameObject.layer == 8 && (CC.at4Way || CC.at2Way || CC.atLight))
+        if (this.gameObject.tag == "CarSensorIntersection" && other.gameObject.layer == 8) //&& (CC.at4Way || CC.at2Way || CC.atLight))
         {
-            Debug.Log("ye1");
             CC.carInIntersection+=1;
         }
     }
@@ -98,8 +98,10 @@ public class CarSensor : MonoBehaviour
             }
             else if (this.gameObject.tag == "CarSensorIntersection" && other.gameObject.layer == 8 && CC.intersection == true && CC.atLight==false)
             {
-                Debug.Log("ye bad");
-                CC.carInIntersection -=1;
+                if(CC.carInIntersection>0)
+                {
+                    CC.carInIntersection -= 1;
+                }
             }
 
             if (CC.carInIntersection == 0 && CC.carInIntersectionLeft == false && CC.carInIntersectionForward == false && CC.carInIntersectionRight == false && CC.intersection==true && CC.atLight == false)
